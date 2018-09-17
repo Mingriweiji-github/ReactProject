@@ -1,17 +1,34 @@
 import React, {Component} from 'react';
-import logo from './logo.svg';
-import './App.css';
+import Header from './components/Header';
+import Home from './components/Home';
 
 class App extends Component {
 
     componentWillMount(){
     }
     render() {
+        const user = {
+            name:'Anner',
+            hobbies: ['sports','reading'],
+        };
+        const children = this.props.children;
         return (
             <div className='container'>
                 <div className='row'>
                     <div className='col-xs-1 col-xs-offset-11'>
-                        <h1>Hello!</h1>
+                        <Header />
+                    </div>
+                </div>
+                <div className='row'>
+                    <div className='col-xs-1 col-xs-offset-11'>
+                        <h1>App</h1>
+                    </div>
+                </div>
+                <div className='row'>
+                    <div className='col-xs-1 col-xs-offset-11'>
+                        <Home name={'Max'} age={12} user={user}>
+                        <p>children</p>
+                        </Home>
                     </div>
                 </div>
             </div>
