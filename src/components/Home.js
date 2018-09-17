@@ -29,7 +29,6 @@ export default class Home extends Component {
                         <div>home name is {this.props.name}, home age is {this.state.age} </div>
                         <button onClick={() => {this.onMakeOlder()}} className="btn btn-primary">Make me older</button>
 
-
                         {/*<div>*/}
                             {/*<h4>Hobbies</h4>*/}
                             {/*<ul>*/}

@@ -11,7 +11,6 @@ class App extends Component {
             name:'Anner',
             hobbies: ['sports','reading'],
         };
-        const children = this.props.children;
         return (
             <div className='container'>
                 <div className='row'>
@@ -27,7 +26,6 @@ class App extends Component {
                 <div className='row'>
                     <div className='col-xs-1 col-xs-offset-11'>
                         <Home name={'Max'} age={12} user={user}>
-                        <p>children</p>
                         </Home>
                     </div>
                 </div>
